@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NotesList from "./components/NotesList";
 import { nanoid } from 'nanoid';
+import Search from "./components/Search";
 
 const App = () => {
 
@@ -45,9 +46,11 @@ const App = () => {
     setNotes(newNotes);
   }
 
-  return (<div className="container">
-    <NotesList notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />
-  </div>)
+  return (
+    <div className="container">
+      <Search />
+      <NotesList notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote} />
+    </div>)
 }
 
 export default App;
