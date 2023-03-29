@@ -53,16 +53,13 @@ const App = () => {
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'));
-
     if (savedNotes) {
-      console.log(savedNotes);
       setNotes(savedNotes);
     };
 
   }, []);
 
   useEffect(() => {
-    console.log("twice");
     localStorage.setItem('react-notes-app-data', JSON.stringify(notes));
   }, [notes]);
 
