@@ -2,6 +2,11 @@
 
 A simple Todo-list React web app doped with features like Add Note, Delete Note, Update Note and even Search for a particular Note. Alongwith CRUD operations on Notes, it also offers toggling the browser mode from Light to Dark and vice-versa.
 
+## ScreenShots 
+
+<img src="./ss1.png"><img src="./ss2.png">
+<img src="./ss3.png"><img src="./ss4.png">
+
 
 ## Getting Started with Create React App
 
